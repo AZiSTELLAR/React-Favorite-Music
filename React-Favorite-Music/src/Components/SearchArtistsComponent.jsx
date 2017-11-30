@@ -1,6 +1,6 @@
 import React from 'react'
-import SearchInputComponent from '../SearchInputComponent'
-import ListOfFavoriteAlbumsComponent from '../FavoriteAlbumsComponent/ListOfFavoriteAlbumsComponent'
+import SearchInputComponent from './SearchInputComponent'
+import ListOfAlbumsComponent from './ListOfAlbumsComponent'
 import axios from 'axios'
 
 export default class SearchArtistsComponent extends React.Component{
@@ -42,7 +42,7 @@ export default class SearchArtistsComponent extends React.Component{
           return(
               <div>
                   <SearchInputComponent onSearchChange={this.searchItunes}/>
-                  {albums? <ListOfFavoriteAlbumsComponent albums={albums}/>:null}
+                  {albums? <ListOfAlbumsComponent albums={albums}/>:null}
               </div>
           )
       }

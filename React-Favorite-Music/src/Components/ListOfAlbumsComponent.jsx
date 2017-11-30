@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import '../albumsStyles.css'
+import './albumsStyles.css'
 
 export default class ListOfFavoriteAlbumsComponent extends React.Component{
     constructor(props) {

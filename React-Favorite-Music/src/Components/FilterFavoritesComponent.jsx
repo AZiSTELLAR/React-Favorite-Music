@@ -1,7 +1,6 @@
 import React from 'react'
-import SearchInputComponent from '../SearchInputComponent'
-import ListOfFavoriteAlbumsComponent from './ListOfFavoriteAlbumsComponent'
-import '../albumsStyles.css'
+import SearchInputComponent from './SearchInputComponent'
+import ListOfAlbumsComponent from './ListOfAlbumsComponent'
 
 export default class FilterFavoritesComponent extends React.Component{
     constructor(props) {
@@ -31,7 +30,7 @@ componentWillMount(){
       return(
           <div>
             <SearchInputComponent onSearchChange={this.searchFaves}/>
-            <ListOfFavoriteAlbumsComponent albums={this.state.favedAlbums}/>
+            <ListOfAlbumsComponent albums={this.state.favedAlbums}/>
           </div>
       )
   }

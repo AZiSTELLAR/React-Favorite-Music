@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Nav from './Nav'
-import SearchArtistsComponent from './Components/SearchArtistsComponent/SearchArtistsComponent'
-import FilterFavoritesComponent from './Components/FavoriteAlbumsComponent/FilterFavoritesComponent'
+import SearchArtistsComponent from './Components/SearchArtistsComponent'
+import FilterFavoritesComponent from './Components/FilterFavoritesComponent'
 import './App.css'
 
 const NoMatch = ({ location }) => (
