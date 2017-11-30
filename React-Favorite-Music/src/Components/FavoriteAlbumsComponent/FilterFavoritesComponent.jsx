@@ -19,8 +19,10 @@ componentWillMount(){
       for (const key in favedAlbums) {
           if (favedAlbums[key].artistName.toUpperCase().indexOf(artist.toUpperCase())) {
               favedAlbums[key].show = false
-          }else
-          favedAlbums[key].show = true
+          }else{
+            favedAlbums[key].show = true
+            favedAlbums[key].fav = true
+          }
       }
       this.setState({favedAlbums})
   }
