@@ -1,6 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './App.css'
+
+/**
+ * Navigation component for the application.
+ * Displays links to the "Search" page and the "Favorite Albums" page.
+ * Uses NavLink for active link styling.
+ * @constructor
+ * @extends {React.Component}
+ * @returns {JSX.Element} An unordered list of navigation links.
+ */
 class Nav extends React.Component {
     render(){
         return(

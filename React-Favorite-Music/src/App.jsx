@@ -5,7 +5,11 @@ import SearchArtistsComponent from './Components/SearchArtistsComponent';
 import FilterFavoritesComponent from './Components/FilterFavoritesComponent';
 import './App.css';
 
-// NoMatch component updated to use useLocation hook
+/**
+ * Component to display when no route matches the current URL.
+ * It uses the `useLocation` hook to display the path that was not found.
+ * @returns {JSX.Element} A div element containing a "no match" message.
+ */
 const NoMatch = () => {
   let location = useLocation();
   return (
@@ -15,6 +19,14 @@ const NoMatch = () => {
   );
 };
 
+/**
+ * Main application component.
+ * Sets up the main routing for the application using React Router.
+ * Includes a header with navigation and defines routes for searching artists
+ * and viewing favorite albums.
+ * @constructor
+ * @extends {Component}
+ */
 class App extends Component {
   constructor(props) {
     super(props);

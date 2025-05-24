@@ -1,5 +1,5 @@
-# React-Favorite-Music
+# React Favorite Music App
 
-A simple react appliction that retireves data from iTunes API and allows to favorite albums by saving them into localStorage.
+This project is a React application for searching music albums and managing a list of favorites.
 
-To run simply write yarn start or npm start
+**For detailed information, setup instructions, and project overview, please see the main README file located at: [React-Favorite-Music/README.md](./React-Favorite-Music/README.md)**
