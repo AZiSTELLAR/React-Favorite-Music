@@ -50,18 +50,29 @@ body {
       opacity: 1;
   }
   
-  .container li:hover:after,
-  .container li.fav:after {
-    content: ' \2605';
+  .container li:after { /* Default empty star for non-favorited items */
+    content: ' \\2606'; /* Empty star Unicode */
     color: rgb(255, 203, 0);
     font-size: 3em;
     position: absolute;
     bottom: 0;
+    right: 5px; /* Adjust positioning as needed */
     cursor: pointer;
+    transition: content 0.2s ease-in-out; /* Transition the content property if possible, or use opacity */
   }
-  .container li.fav:hover:after {
-    content: ' \2606';
+
+  .container li:not(.fav):hover:after { /* Filled star on hover for non-favorited items */
+    content: ' \\2605'; /* Filled star Unicode */
   }
+
+  .container li.fav:after { /* Filled star for favorited items */
+    content: ' \\2605'; /* Filled star Unicode */
+  }
+
+  /* No need for .container li.fav:hover:after if it's the same as .fav:after */
+  /* If you want a different hover effect for already favorited items, you can add it: */
+  /* .container li.fav:hover:after { content: ' \\2605'; } */
+
 
   #search{
     width: 40%;
